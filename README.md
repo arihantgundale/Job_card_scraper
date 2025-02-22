@@ -26,10 +26,12 @@ Key components:
 •	Uses headless Chrome with anti-bot detection flags.
 •	Chromedriver Path: Update in all configure_driver() functions if needed.
 •	Example configuration: 
+
 options.add_argument("--disable-blink-features=AutomationControlled")
 service = Service("/path_to_chromedriver")
 
 2. LinkedIn Scraper (linkedin_scraper.py)
+
 •	Authentication: Uses hardcoded credentials (security risk in production).
 •	URL Format: https://www.linkedin.com/jobs/search/?keywords={job_title}&location={location}
 •	Data Collected:
